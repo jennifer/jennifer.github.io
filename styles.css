@@ -29,3 +29,11 @@ main {
 .div-small {
     width: 20em;
 }
+
+.icon-span {
+    font-size: 2em;
+}
+
+.fab, .far {
+    color: black;
+}
