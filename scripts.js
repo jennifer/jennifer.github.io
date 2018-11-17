@@ -3,7 +3,7 @@ window.addEventListener('mousemove', function(e) {
       var j = (1 - i) * 50;
       var elem = document.createElement('div');
       var size = Math.ceil(Math.random() * 10 * i) + 'px';
-      elem.style.position = 'fixed';
+      elem.style.position = 'absolute';
       elem.style.top = e.pageY + Math.round(Math.random() * j - j / 2) + 'px';
       elem.style.left = e.pageX + Math.round(Math.random() * j - j / 2) + 'px';
       elem.style.width = size;

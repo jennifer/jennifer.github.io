@@ -15,50 +15,79 @@ main {
 
 .div {
     border: 2px black solid;
-    background-color: white;
+    background-color: #ffff00ff
+    ;
     position: relative;
 }
 
 .div-wiki {
-    width: 40em;
-    left: 40em;
-    top: -15em;
-    margin-bottom: -15em;
+    width: 45em;
+    left: 35em;
+    top: -12em;
+    margin-bottom: -12em;
 }
 
 .div-gal {
-    width: 35em;
-    left: 3em;
-    top: -6em;
-    margin-bottom: -6em;
+    width: 40em;
+    left: 2em;
+    top: -10em;
+    margin-bottom: -10em;
 }
 
 .div-sv {
     width: 30em;
-    left: 42em;
+    left: 53em;
     top: -20em;
     margin-bottom: -20em;
 }
 
 .div-ref {
-    width: 45em;
-    left: 40em;
-    top: 2em;
-    margin-bottom: 2em;
+    width: 50em;
+    left: 6em;
+    top: -8em;
+    margin-bottom: -8em;
 }
 
 .div-res {
     width: 30em;
-    top: -10em
+    left: 43em;
+    top: -10em;
+    margin-bottom: -10em;
 }
 
 .div-pic {
     width: 15em;
-   
+    left:29em;
+    top: -25em;
+    margin-bottom: -18em;
 }
 
-.icon-span {
+.gh-wiki {
+    left: 23.7em;
+}
+
+.gh-gal {
+    left: 22em;
+}
+
+.gh-sv {
+    left: 10.6em;
+}
+
+.gh-ref {
+    left: 28em;
+}
+
+.gh-pic {
+    left: 8.7em;   
+}
+
+.icon-span, .icon-tech {
     font-size: 2em;
+}
+
+.icon-tech {
+    padding-right: 0.2em;
 }
 
 .fab, .far {
@@ -76,26 +105,6 @@ h2, .project-span {
     font-size: 1.5em;
 }
 
-.gh-wiki {
-    left: 13.7em;
-}
-
-.gh-gal {
-    left: 12em;
-}
-
-.gh-ref {
-    left: 14.7em;
-}
-
-.gh-sv {
-    left: 1.2em;
-}
-
-.gh-pic {
-    left: 9.5em;   
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -104,7 +113,6 @@ a {
 .each-website {
     position: relative;
     border-top: 2px black solid;
-    border-bottom: 2px black solid;
 }
 
 .website-image {
@@ -137,8 +145,4 @@ a {
 
 .line-margin-top {
     margin-top: 0.5em;
-}
-
-.hello {
-    width: 1.5em;
 }
