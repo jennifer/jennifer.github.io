@@ -1,0 +1,13 @@
+body, h1 {
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(0, 217, 255), rgb(212, 0, 255));
+    padding: 1em;
+  }
+
+.div-narrow {
+    width: 20em;
+}
