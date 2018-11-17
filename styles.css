@@ -4,7 +4,6 @@ body, h1, h2, p {
 
 main {
     font-family: 'Niramit', sans-serif;
-    height: 100vh;
     background: linear-gradient(to bottom right, #00ffffff, #ff00ffff);
     padding: 1em;
   }
@@ -16,18 +15,37 @@ main {
 .div {
     border: 2px black solid;
     background-color: white;
+    position: relative;
 }
 
-.div-large {
+.div-wiki {
     width: 30em;
+    left: 20em;
+    bottom: 13em;
 }
 
-.div-med {
+.div-gal {
     width: 25em;
+    left: 34em;
+    bottom: 12em;
 }
 
-.div-small {
+.div-ref {
+    width: 30em;
+    left: 2em;
+    bottom: 34em;
+}
+
+.div-sv {
+    width: 19em;
+    left: 68em;
+    bottom: 73em;
+}
+
+.div-pic {
     width: 20em;
+    left: 65em;
+    bottom: 72em;
 }
 
 .icon-span {
@@ -36,4 +54,82 @@ main {
 
 .fab, .far {
     color: black;
+}
+
+h2, .project-span {
+    display: inline-block;
+    padding-left: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+.icon-github {
+    position: relative;
+    font-size: 1.5em;
+}
+
+.gh-wiki {
+    left: 13.7em;
+}
+
+.gh-gal {
+    left: 12em;
+}
+
+.gh-ref {
+    left: 14.7em;
+}
+
+.gh-sv {
+    left: 1.2em;
+}
+
+.gh-pic {
+    left: 9.5em;   
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.each-website {
+    position: relative;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+.website-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    opacity: 0;
+    transition: .5s ease;
+    padding: 0.7em;
+}
+
+.each-website:hover .overlay {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.line-margin-bottom {
+    margin-bottom: 0.5em;
+}
+
+.line-margin-top {
+    margin-top: 0.5em;
+}
+
+.hello {
+    width: 1.5em;
 }
