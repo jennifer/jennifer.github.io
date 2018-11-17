@@ -6,6 +6,7 @@ main {
     font-family: 'Niramit', sans-serif;
     background: linear-gradient(to bottom right, #00ffffff, #ff00ffff);
     padding: 1em;
+    position: relative;
   }
 
 .bio {
@@ -19,33 +20,41 @@ main {
 }
 
 .div-wiki {
-    width: 30em;
-    left: 20em;
-    bottom: 13em;
+    width: 40em;
+    left: 40em;
+    top: -15em;
+    margin-bottom: -15em;
 }
 
 .div-gal {
-    width: 25em;
-    left: 34em;
-    bottom: 12em;
-}
-
-.div-ref {
-    width: 30em;
-    left: 2em;
-    bottom: 34em;
+    width: 35em;
+    left: 3em;
+    top: -6em;
+    margin-bottom: -6em;
 }
 
 .div-sv {
-    width: 19em;
-    left: 68em;
-    bottom: 73em;
+    width: 30em;
+    left: 42em;
+    top: -20em;
+    margin-bottom: -20em;
+}
+
+.div-ref {
+    width: 45em;
+    left: 40em;
+    top: 2em;
+    margin-bottom: 2em;
+}
+
+.div-res {
+    width: 30em;
+    top: -10em
 }
 
 .div-pic {
-    width: 20em;
-    left: 65em;
-    bottom: 72em;
+    width: 15em;
+   
 }
 
 .icon-span {
