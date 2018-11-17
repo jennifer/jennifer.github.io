@@ -1,13 +1,31 @@
-body, h1 {
+body, h1, h2, p {
     margin: 0;
 }
 
 main {
+    font-family: 'Niramit', sans-serif;
     height: 100vh;
-    background: linear-gradient(to bottom right, rgb(0, 217, 255), rgb(212, 0, 255));
+    background: linear-gradient(to bottom right, #00ffffff, #ff00ffff);
     padding: 1em;
   }
 
-.div-narrow {
+.bio {
+    width: 17.5em;
+}
+
+.div {
+    border: 2px black solid;
+    background-color: white;
+}
+
+.div-large {
+    width: 30em;
+}
+
+.div-med {
+    width: 25em;
+}
+
+.div-small {
     width: 20em;
 }
