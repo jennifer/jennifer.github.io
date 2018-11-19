@@ -2,7 +2,7 @@ window.addEventListener('mousemove', function(e) {
     [1, .9, .8, .5, .1].forEach(function(i) {
       var j = (1 - i) * 50;
       var elem = document.createElement('div');
-      var size = Math.ceil(Math.random() * 10 * i) + 'px';
+      var size = Math.ceil(Math.random() * 11 * i) + 'px';
       elem.style.position = 'absolute';
       elem.style.top = e.pageY + Math.round(Math.random() * j - j / 2) + 'px';
       elem.style.left = e.pageX + Math.round(Math.random() * j - j / 2) + 'px';
@@ -18,6 +18,6 @@ window.addEventListener('mousemove', function(e) {
       document.body.appendChild(elem);
       window.setTimeout(function() {
         document.body.removeChild(elem);
-      }, Math.round(Math.random() * i * 500));
+      }, Math.round(Math.random() * i * 600));
     });
   }, false);

@@ -9,14 +9,27 @@ main {
     position: relative;
   }
 
+p {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2, .project-span {
+    display: inline-block;
+    padding: 0.1em;
+}
+
 .bio {
-    width: 17.5em;
+    width: 21em;
 }
 
 .div {
     border: 2px black solid;
-    background-color: #ffff00ff
-    ;
+    background-color: #fff6a2;
     position: relative;
 }
 
@@ -62,52 +75,16 @@ main {
     margin-bottom: -18em;
 }
 
-.gh-wiki {
-    left: 23.7em;
-}
-
-.gh-gal {
-    left: 22em;
-}
-
-.gh-sv {
-    left: 10.6em;
-}
-
-.gh-ref {
-    left: 28em;
-}
-
-.gh-pic {
-    left: 8.7em;   
-}
-
 .icon-span, .icon-tech {
     font-size: 2em;
 }
 
-.icon-tech {
+.icon-tech, .card-title {
     padding-right: 0.2em;
 }
 
-.fab, .far {
-    color: black;
-}
-
-h2, .project-span {
-    display: inline-block;
-    padding-left: 0.1em;
-    padding-bottom: 0.1em;
-}
-
 .icon-github {
-    position: relative;
     font-size: 1.5em;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 .each-website {
@@ -145,4 +122,25 @@ a {
 
 .line-margin-top {
     margin-top: 0.5em;
+}
+
+@media (max-width: 650px) {
+
+    main {
+        width: 100%;
+    }
+    .div { 
+        width: auto;
+        margin-top: 1em;
+    }
+
+    .div-wiki, .div-gal, .div-sv, .div-ref, .div-res, .div-pic {
+        left: 0em;
+        top: 0em;
+        margin-bottom: 0em;
+    }
+
+    .div-pic {
+        max-width: 10em;
+    }
 }
