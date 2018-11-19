@@ -20,7 +20,7 @@ a {
 
 h2, .project-span {
     display: inline-block;
-    padding: 0.1em;
+    padding: 0.2em;
 }
 
 .bio {
@@ -28,9 +28,11 @@ h2, .project-span {
 }
 
 .div {
-    border: 2px black solid;
+    border: 0.1em black solid;
     background-color: #fff6a2;
     position: relative;
+    box-shadow: 0.7em 0.57em;
+    margin-right: 0.7em;
 }
 
 .div-wiki {
@@ -89,7 +91,7 @@ h2, .project-span {
 
 .each-website {
     position: relative;
-    border-top: 2px black solid;
+    border-top: 0.1em black solid;
 }
 
 .website-image {
@@ -127,8 +129,14 @@ h2, .project-span {
 @media (max-width: 650px) {
 
     main {
-        width: 100%;
+        box-sizing: border-box;
+        width: auto;
     }
+
+    .bio {
+        width: auto;
+    }
+
     .div { 
         width: auto;
         margin-top: 1em;
@@ -137,10 +145,17 @@ h2, .project-span {
     .div-wiki, .div-gal, .div-sv, .div-ref, .div-res, .div-pic {
         left: 0em;
         top: 0em;
-        margin-bottom: 0em;
+        margin-bottom: 1.7em;
     }
 
     .div-pic {
         max-width: 10em;
+    }
+
+    .overlay {
+        position: relative;
+        opacity: 1;
+        padding: 0.7em;
+        border-top: 0.1em black solid;
     }
 }
