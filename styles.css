@@ -18,7 +18,7 @@ a {
     color: black;
 }
 
-h2, .project-span {
+h2, span, .project-span {
     display: inline-block;
     padding: 0.2em;
 }
@@ -129,6 +129,10 @@ h2, .project-span {
 
 .line-margin-top {
     margin-top: 0.5em;
+}
+
+.hello {
+    width: 2em;
 }
 
 @media (max-width: 1400px) {
@@ -242,7 +246,6 @@ h2, .project-span {
         top: -3em;
         margin-bottom: -3em;
     }
-
 }
 
 @media (max-width: 900px), (hover: none) {
@@ -257,14 +260,16 @@ h2, .project-span {
         margin-top: 1em;
     }
 
-    .div-wiki, .div-gal, .div-sv, .div-ref, .div-res, .div-pic {
+    .div-wiki, .div-gal, .div-sv, .div-ref, .div-res {
         left: 0em;
         top: 0em;
         margin-bottom: 1.7em;
     }
 
     .div-pic {
-        max-width: 0.5em;
+        top: -55em;
+        margin-bottom: -55em;
+        visibility: hidden;
     }
 
     .overlay {
