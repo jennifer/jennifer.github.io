@@ -28,10 +28,11 @@ h2, .project-span {
 }
 
 .div {
+    box-sizing: border-box;
     border: 0.1em black solid;
     background-color: #fff6a2;
     position: relative;
-    box-shadow: 0.7em 0.57em;
+    box-shadow: 0.3em 0.3em 0.5em;
     margin-right: 0.7em;
 }
 
@@ -52,15 +53,15 @@ h2, .project-span {
 .div-sv {
     width: 30em;
     left: 53em;
-    top: -20em;
-    margin-bottom: -20em;
+    top: -22em;
+    margin-bottom: -22em;
 }
 
 .div-ref {
     width: 50em;
     left: 6em;
-    top: -8em;
-    margin-bottom: -8em;
+    top: -6em;
+    margin-bottom: -6em;
 }
 
 .div-res {
@@ -72,7 +73,7 @@ h2, .project-span {
 
 .div-pic {
     width: 15em;
-    left:29em;
+    left: 28.5em;
     top: -25em;
     margin-bottom: -18em;
 }
@@ -81,8 +82,12 @@ h2, .project-span {
     font-size: 2em;
 }
 
-.icon-tech, .card-title {
+.icon-tech {
     padding-right: 0.2em;
+}
+
+.icon-github {
+    padding-left: 0.2em;
 }
 
 .icon-github {
@@ -126,19 +131,129 @@ h2, .project-span {
     margin-top: 0.5em;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1400px) {
 
-    main {
-        box-sizing: border-box;
-        width: auto;
+    .div-wiki {
+        left: 30em;
     }
 
-    .bio {
+    .div-sv {
+        left: 48em;
+    }
+}
+
+@media (max-width: 1300px) {
+   
+    .div-wiki {
+        width: 40em;
+        left: 27em;
+    }
+
+    .div-gal {
+        width: 35em;
+        left: 2em;
+        top: -5em;
+        margin-bottom: -5em;
+    }
+
+    .div-sv {
+        width: 25em;
+        left: 45em;
+        top: -17em;
+        margin-bottom: -17em;
+    }
+
+    .div-ref {
+        width: 45em;
+    }
+
+    .div-res {
+        width: 30em;
+        left: 35em;
+        top: -4em;
+        margin-bottom: -4em;
+    }
+
+    .div-pic {
+        width: 12em;
+        left: 24em;
+        top: -20em;
+        margin-bottom: -12em;
+    }
+}
+
+@media (max-width: 1150px) {
+   
+    .div-wiki {
+        width: 35em;
+        left: 23em;
+    }
+
+    .div-gal {
+        width: 30em;
+        left: 2em;
+    }
+
+    .div-sv {
+        width: 22em;
+        left: 37em;
+    }
+
+    .div-ref {
+        width: 37em;
+        top: -4em;
+        margin-bottom: -4em;
+    }
+
+    .div-res {
+        left: 25em;
+        top: -4em;
+        margin-bottom: -4em;
+    }
+
+    .div-pic {
+        left: 14em;
+        top: -20em;
+        margin-bottom: -12em;
+    }
+}
+
+@media (max-width: 1000px) {
+   
+    .div-wiki {
+        width: 32em;
+        left: 22.5em;
+    }
+
+    .div-gal {
+        width: 25em;
+        left: 2em;
+        top: -3em;
+        margin-bottom: -3em;
+    }
+
+    .div-sv {
+        width: 22em;
+        left: 31em;
+    }
+
+    .div-ref {
+        width: 35em;
+        top: -3em;
+        margin-bottom: -3em;
+    }
+
+}
+
+@media (max-width: 900px), (hover: none) {
+
+    main, .bio, .div {
         width: auto;
+        max-width: 60em;
+        min-width: 25em;
     }
 
     .div { 
-        width: auto;
         margin-top: 1em;
     }
 
@@ -149,7 +264,7 @@ h2, .project-span {
     }
 
     .div-pic {
-        max-width: 10em;
+        max-width: 0.5em;
     }
 
     .overlay {
