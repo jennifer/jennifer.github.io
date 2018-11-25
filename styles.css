@@ -52,6 +52,38 @@ h2, .project-span {
     margin-right: 0.7em;
 }
 
+
+.each-website {
+    position: relative;
+    border-top: 0.1em black solid;
+    width: 100%;
+    height: 100%;
+}
+
+.website-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    opacity: 0;
+    transition: .5s ease;
+    padding: 0.7em;
+}
+
+.each-website:hover .overlay {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 .div-wiki {
     width: 45em;
     left: 35em;
@@ -105,34 +137,6 @@ h2, .project-span {
 .icon-github {
     font-size: 1.5em;
     margin-left: 0.1em;
-}
-
-.each-website {
-    position: relative;
-    border-top: 0.1em black solid;
-}
-
-.website-image {
-    display: block;
-    width: 100%;
-}
-
-.overlay {
-    position: absolute;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    opacity: 0;
-    transition: .5s ease;
-    padding: 0.7em;
-}
-
-.each-website:hover .overlay {
-    opacity: 0.9;
-    cursor: pointer;
 }
 
 .line-margin-bottom {
