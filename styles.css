@@ -34,7 +34,7 @@ h2, .project-span {
 }
 
 .hello-span {
-    padding: 0.7em;
+    padding: 0.65em;
 }
 
 .bio {
@@ -103,7 +103,6 @@ h2, .project-span {
 }
 
 .icon-github {
-    padding-left: 0.2em;
     font-size: 1.5em;
 }
 
