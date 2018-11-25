@@ -115,8 +115,8 @@ h2, .project-span {
 .website-image {
     display: block;
     width: 100%;
-    min-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .overlay {
