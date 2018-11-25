@@ -38,7 +38,9 @@ h2, .project-span {
 }
 
 .bio {
+    position: relative;
     width: 21em;
+    top: -1em;
 }
 
 .div {
@@ -81,15 +83,15 @@ h2, .project-span {
 .div-res {
     width: 30em;
     left: 43em;
-    top: -10em;
+    top: -5em;
     margin-bottom: -10em;
 }
 
 .div-pic {
     width: 15em;
     left: 28.5em;
-    top: -25em;
-    margin-bottom: -18em;
+    top: -20em;
+    margin-bottom: -13em;
 }
 
 .icon-span, .icon-tech {
@@ -281,9 +283,8 @@ h2, .project-span {
     }
 
     .div-pic {
-        width: {
-            10em;
-        }
+        display: none;
+  
     }
 
     .overlay {
