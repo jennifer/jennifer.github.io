@@ -7,7 +7,7 @@ main {
     background: linear-gradient(to bottom right, #00ffffff, #ff00ffff);
     padding: 1em;
     position: relative;
-  }
+}
 
 p {
     font-size: 1.2em;
