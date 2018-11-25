@@ -116,7 +116,7 @@ h2, .project-span {
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .overlay {
