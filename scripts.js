@@ -24,16 +24,11 @@ for ( let i=0; i < draggableElems.length; i++ ) {
 }
 
 // Bring clicked card to front
+let highestDraggableZIndex = 0;
 function bringCardToFront(clickedCard) {
-  console.log(clickedCard);
-  let highestDraggableZIndex = 0;
-  $('.draggable').each(function(index) {
-      let thisElemZIndex = parseInt(clickedCard.style.zIndex);
-      if (thisElemZIndex > highestDraggableZIndex) {
-          highestDraggableZIndex = thisElemZIndex
-      }
-  });
-  $(clickedCard).css('z-index', highestDraggableZIndex + 1)
+  let thisElemZIndex = highestDraggableZIndex + 1;
+  $(clickedCard).css('z-index', thisElemZIndex);
+  highestDraggableZIndex = thisElemZIndex; 
 };
 
 // Add mousetrails
