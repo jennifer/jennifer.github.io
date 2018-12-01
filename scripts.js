@@ -1,3 +1,11 @@
+// Bring clicked card to front
+let highestDraggableZIndex = 0;
+function bringCardToFront(clickedCard) {
+  let thisElemZIndex = highestDraggableZIndex + 1;
+  $(clickedCard).css('z-index', thisElemZIndex);
+  highestDraggableZIndex = thisElemZIndex; 
+};
+
 // Make cards draggable
 const elem = document.querySelector('.draggable');
 let draggie = new Draggabilly( elem, {
@@ -22,14 +30,6 @@ for ( let i=0; i < draggableElems.length; i++ ) {
   });
   draggies.push( draggie );
 }
-
-// Bring clicked card to front
-let highestDraggableZIndex = 0;
-function bringCardToFront(clickedCard) {
-  let thisElemZIndex = highestDraggableZIndex + 1;
-  $(clickedCard).css('z-index', thisElemZIndex);
-  highestDraggableZIndex = thisElemZIndex; 
-};
 
 // Add mousetrails
 window.addEventListener('mousemove', function(e) {
