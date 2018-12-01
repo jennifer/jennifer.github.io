@@ -10,6 +10,7 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 </head>
 <body>
     <main>
@@ -29,7 +30,7 @@
                 <a href='mailto:jjkerssen@gmail.com'><i class='far fa-envelope icon-click'></i></a>
             </span>
         </div>
-        <div class='div div-wiki draggable'>
+        <div class='div div-wiki draggable' onClick='bringCardToFront(this);'>
             <span class=project-span>
                 <h2><a href='https://wikispeaks.herokuapp.com/' class=card-title target=blank>Wikispeaks</a></h2><a href='https://github.com/jennifer/wikispeaks' target=blank class=icon-github><i class='fab fa-github'></i></a>
             </span>

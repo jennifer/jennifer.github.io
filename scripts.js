@@ -1,28 +1,41 @@
-var elem = document.querySelector('.draggable');
-var draggie = new Draggabilly( elem, {
+// Make cards draggable
+const elem = document.querySelector('.draggable');
+let draggie = new Draggabilly( elem, {
   // options...
 });
 
 // or pass in selector string as first argument
-var draggie = new Draggabilly( '.draggable', {
+draggie = new Draggabilly( '.draggable', {
   // options...
 });
 
 // if you have multiple .draggable elements
 // get all draggie elements
-var draggableElems = document.querySelectorAll('.draggable');
+const draggableElems = document.querySelectorAll('.draggable');
 // array of Draggabillies
-var draggies = []
+const draggies = []
 // init Draggabillies
-for ( var i=0; i < draggableElems.length; i++ ) {
-  var draggableElem = draggableElems[i];
-  var draggie = new Draggabilly( draggableElem, {
+for ( let i=0; i < draggableElems.length; i++ ) {
+  const draggableElem = draggableElems[i];
+  let draggie = new Draggabilly( draggableElem, {
     // options...
   });
   draggies.push( draggie );
 }
 
+// Bring clicked card to front
+function bringCardToFront(clickedCard) {
+  var highestDraggableZIndex = 0;
+  $('.draggable-item').each(function(index) {
+      var thisElemZIndex = $(this).zIndex();
+      if (thisElemZIndex > highestDraggableZIndex) {
+          highestDraggableZIndex = thisElemZIndex
+      }
+  });
+  $(clickedCard).css("z-index", highestDraggableZIndex + 1)
+};
 
+// Add mousetrails
 window.addEventListener('mousemove', function(e) {
     [1, .9, .8, .5, .1].forEach(function(i) {
       const j = (1 - i) * 50;
@@ -33,6 +46,7 @@ window.addEventListener('mousemove', function(e) {
       element.style.left = e.pageX + Math.round(Math.random() * j - j / 2) + 'px';
       element.style.width = size;
       element.style.height = size;
+      element.style.zIndex = 1000;
       element.style.background = 'hsla(' +
         Math.round(Math.random() * 360) + ', ' +
         '100%, ' +
