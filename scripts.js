@@ -25,14 +25,15 @@ for ( let i=0; i < draggableElems.length; i++ ) {
 
 // Bring clicked card to front
 function bringCardToFront(clickedCard) {
-  var highestDraggableZIndex = 0;
-  $('.draggable-item').each(function(index) {
-      var thisElemZIndex = $(this).zIndex();
+  console.log(clickedCard);
+  let highestDraggableZIndex = 0;
+  $('.draggable').each(function(index) {
+      let thisElemZIndex = parseInt(clickedCard.style.zIndex);
       if (thisElemZIndex > highestDraggableZIndex) {
           highestDraggableZIndex = thisElemZIndex
       }
   });
-  $(clickedCard).css("z-index", highestDraggableZIndex + 1)
+  $(clickedCard).css('z-index', highestDraggableZIndex + 1)
 };
 
 // Add mousetrails
