@@ -83,42 +83,42 @@ h2, .project-span {
 }
 
 .div-res {
-    width: 30em;
-    left: 50em;
-    top: -37em;
-    margin-bottom: -37em;
+    width: 35em;
+    left: 55em;
+    top: -34em;
+    margin-bottom: -34em;
 }
 
 .div-sv {
-    width: 25em;
+    width: 30em;
     left: 20.5em;
     top: -20em;
     margin-bottom: -20em;
 }
 
 .div-ref {
-    width: 45em;
-    left: 24em;
-    top: -37em;
-    margin-bottom: -37em;
+    width: 50em;
+    left: 27em;
+    top: -44em;
+    margin-bottom: -44em;
 }
 
 .div-gal {
-    width: 35em;
-    left: 31em;
+    width: 40em;
+    left: 42em;
     top: -23em;
     margin-bottom: -23em;
 }
 
 .div-wiki {
-    width: 40em;
-    left: 43em;
-    top: -40em;
-    margin-bottom: -40em;
+    width: 45em;
+    left: 59em;
+    top: -44em;
+    margin-bottom: -44em;
 }
 
 .div-pic {
-    width: 13em;
+    width: 15em;
     left: 35em;
 }
 
@@ -144,13 +144,92 @@ h2, .project-span {
     padding-left: 0.2em;
 }
 
+@media (max-width: 1700px) {
+    .div-res {
+        left: 50em;
+        top: -33em;
+        margin-bottom: -33em;
+    }
+    
+    .div-sv {
+        width: 25em;
+        left: 19.5em;
+        top: -15em;
+        margin-bottom: -15em;
+    }
+    
+    .div-ref {
+        left: 25em;
+        top: -45em;
+        margin-bottom: -45em;
+    }
+    
+    .div-gal {
+        left: 36em;
+        top: -19em;
+        margin-bottom: -19em;
+    }
+    
+    .div-wiki {
+        left: 50em;
+        top: -49em;
+        margin-bottom: -49em;
+    }
+    
+    .div-pic {
+        width: 13em;
+        left: 35em;
+    }
+}
+
+@media (max-width: 1550px) {
+    .div-res {
+        width: 30em;
+        left: 49em;
+        top: -34em;
+        margin-bottom: -34em;
+    }
+    
+    .div-sv {
+        width: 25em;
+        left: 20.5em;
+        top: -20em;
+        margin-bottom: -20em;
+    }
+    
+    .div-ref {
+        width: 45em;
+        left: 24em;
+        top: -37em;
+        margin-bottom: -37em;
+    }
+    
+    .div-gal {
+        width: 35em;
+        left: 31em;
+        top: -23em;
+        margin-bottom: -23em;
+    }
+    
+    .div-wiki {
+        width: 40em;
+        left: 43em;
+        top: -40em;
+        margin-bottom: -40em;
+    }
+    
+    .div-pic {
+        width: 13em;
+        left: 35em;
+    }
+}
 
 @media (max-width: 1370px) {
    
     .div-res {
         width: 25em;
-        top: -33em;
-        margin-bottom: -33em;
+        top: -30em;
+        margin-bottom: -30em;
     }
     
     .div-sv {
@@ -223,12 +302,9 @@ h2, .project-span {
 
     .div-res {
         left: 33em;
-        top: -33em;
-        margin-bottom: -33em;
     }
     
     .div-sv {
-        width: 18em;
         left: 20.5em;
         top: -14em;
         margin-bottom: -14em;
@@ -263,8 +339,8 @@ h2, .project-span {
 
     .div-res {
         left: 29em;
-        top: -35em;
-        margin-bottom: -35em;
+        top: -32em;
+        margin-bottom: -32em;
     }
     
     .div-sv {
