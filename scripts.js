@@ -8,26 +8,11 @@ function bringCardToFront(clickedCard) {
 
 // Make cards draggable
 const elem = document.querySelector('.draggable');
-let draggie = new Draggabilly( elem, {
-  // options...
-});
-
-// or pass in selector string as first argument
-draggie = new Draggabilly( '.draggable', {
-  // options...
-});
-
-// if you have multiple .draggable elements
-// get all draggie elements
 const draggableElems = document.querySelectorAll('.draggable');
-// array of Draggabillies
 const draggies = []
-// init Draggabillies
 for ( let i=0; i < draggableElems.length; i++ ) {
   const draggableElem = draggableElems[i];
-  let draggie = new Draggabilly( draggableElem, {
-    // options...
-  });
+  let draggie = new Draggabilly(draggableElem);
   draggies.push( draggie );
 }
 

@@ -7,6 +7,8 @@ main {
     background: linear-gradient(to bottom right, #00ffffff, #ff00ffff);
     padding: 1em;
     position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
 p {
@@ -24,7 +26,7 @@ h1 {
 
 h2, .project-span {
     display: inline-block;
-    padding: 0.2em;
+    padding: 0.15em;
 }
 
 .hello {
@@ -80,46 +82,44 @@ h2, .project-span {
     cursor: ;
 }
 
-.div-wiki {
-    width: 45em;
-    left: 35em;
-    top: -15em;
-    margin-bottom: -15em;
-}
-
-.div-gal {
-    width: 40em;
-    left: 2em;
-    top: -10em;
-    margin-bottom: -10em;
+.div-res {
+    width: 30em;
+    left: 55em;
+    top: -36em;
+    margin-bottom: -36em;
 }
 
 .div-sv {
-    width: 30em;
-    left: 53em;
-    top: -22em;
-    margin-bottom: -22em;
+    width: 25em;
+    left: 4em;
+    top: -18em;
+    margin-bottom: -18em;
 }
 
 .div-ref {
-    width: 50em;
-    left: 6em;
-    top: -6em;
-    margin-bottom: -6em;
+    width: 45em;
+    left: 10em;
+    top: -26em;
+    margin-bottom: -26em;
 }
 
-.div-res {
-    width: 30em;
-    left: 43em;
-    top: -5em;
-    margin-bottom: -10em;
+.div-gal {
+    width: 35em;
+    left: 23em;
+    top: -38em;
+    margin-bottom: -38em;
+}
+
+.div-wiki {
+    width: 40em;
+    left: 34em;
+    top: -40em;
+    margin-bottom: -20em;
 }
 
 .div-pic {
-    width: 15em;
-    left: 28.5em;
-    top: -20em;
-    margin-bottom: -13em;
+    width: 13em;
+    left: 35em;
 }
 
 .icon-tech {
@@ -261,11 +261,14 @@ h2, .project-span {
 
     main, .bio, .div {
         width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .bio, .div {
         max-width: 60em;
-        min-width: 25em;
+        min-width: 20em;
     }
 
     .div { 
@@ -278,9 +281,28 @@ h2, .project-span {
         margin-bottom: 1.7em;
     }
 
+    .div-wiki {
+        order: 1;
+    }
+    
+    .div-gal {
+        order: 2;
+    }
+    
+    .div-ref {
+        order: 3;
+    }
+
+    .div-sv {
+        order: 4;
+    }
+        
+    .div-res {
+        order: 5;
+    }
+
     .div-pic {
         display: none;
-  
     }
 
     .overlay {
