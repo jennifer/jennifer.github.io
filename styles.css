@@ -1,5 +1,8 @@
-body, h1, h2, p {
+* {
     margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
 }
 
 main {
@@ -19,6 +22,7 @@ h1, p {
 h2, .project-span {
     display: inline-block;
     padding: 0.15em;
+    font-size: 1.2em; 
     font-weight: normal; 
 }
 
@@ -94,8 +98,8 @@ a {
 .div-sv {
     width: 30em;
     left: 20.5em;
-    top: -20em;
-    margin-bottom: -20em;
+    top: -23em;
+    margin-bottom: -23em;
 }
 
 .div-ref {
@@ -115,7 +119,7 @@ a {
 .div-wiki {
     width: 45em;
     left: 59em;
-    top: -44em;
+    top: -43em;
     margin-bottom: -44em;
 }
 
@@ -130,7 +134,7 @@ a {
 }
 
 .icon-project-span {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-right: 0.2em;
 }
 
@@ -156,8 +160,8 @@ a {
     .div-sv {
         width: 25em;
         left: 19.5em;
-        top: -15em;
-        margin-bottom: -15em;
+        top: -18.5em;
+        margin-bottom: -18.5em;
     }
     
     .div-ref {
@@ -173,27 +177,25 @@ a {
     }
     
     .div-wiki {
-        left: 50em;
-        top: -49em;
-        margin-bottom: -49em;
+        left: 47em;
+        top: -47em;
+        margin-bottom: -47em;
     }
     
     .div-pic {
         width: 13em;
-        left: 35em;
     }
 }
 
 @media (max-width: 1550px) {
     .div-res {
         width: 30em;
-        left: 49em;
+        left: 49.5em;
         top: -34em;
         margin-bottom: -34em;
     }
     
     .div-sv {
-        width: 25em;
         left: 20.5em;
         top: -20em;
         margin-bottom: -20em;
@@ -216,13 +218,8 @@ a {
     .div-wiki {
         width: 40em;
         left: 43em;
-        top: -40em;
-        margin-bottom: -40em;
-    }
-    
-    .div-pic {
-        width: 13em;
-        left: 35em;
+        top: -39.6em;
+        margin-bottom: -39.6em;
     }
 }
 
@@ -236,7 +233,6 @@ a {
     
     .div-sv {
         width: 20em;
-        left: 20.5em;
         top: -12em;
         margin-bottom: -12em;
     }
@@ -255,14 +251,12 @@ a {
     
     .div-wiki {
         width: 35em;
-        left: 43em;
         top: -36em;
         margin-bottom: -36em;
     }
     
     .div-pic {
         width: 10em;
-        left: 35em;
     }
 }
 
@@ -274,8 +268,8 @@ a {
     .div-sv {
         width: 18em;
         left: 20.5em;
-        top: -14em;
-        margin-bottom: -14em;
+        top: -16em;
+        margin-bottom: -16em;
     }
     
     .div-ref {
@@ -306,17 +300,8 @@ a {
         left: 33em;
     }
     
-    .div-sv {
-        left: 20.5em;
-        top: -14em;
-        margin-bottom: -14em;
-    }
-    
     .div-ref {
         width: 30em;
-        left: 24em;
-        top: -30em;
-        margin-bottom: -30em;
     }
     
     .div-gal {
@@ -353,24 +338,17 @@ a {
     }
     
     .div-ref {
-        width: 30em;
         left: 20em;
         top: -30em;
         margin-bottom: -30em;
     }
     
     .div-gal {
-        width: 23em;
         left: 24.5em;
-        top: -9em;
-        margin-bottom: -9em;
     }
     
     .div-wiki {
-        width: 25em;
         left: 31em;
-        top: -33.5em;
-        margin-bottom: -33.5em;
     }
 }
 
